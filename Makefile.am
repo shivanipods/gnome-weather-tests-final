@@ -49,4 +49,8 @@ clean-local:
 
 EXTRA_DIST = $(PACKAGE_NAME).spec
 
+@BEHAVE_INSTALLED_TESTS_RULE@
+INSTALLED_TESTS=add_new_cities remove_cities back_to_world_weather select_all_cities escape_win_select
+INSTALLED_TESTS_TYPE=session-exclusive
+
 include $(top_srcdir)/git.mk

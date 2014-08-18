@@ -45,6 +45,10 @@ AC_ARG_ENABLE(dogtail,
                               [test using dogtail [default=yes]])],,
               enable_dogtail=yes)
 AM_CONDITIONAL(ENABLE_DOGTAIL, test "$enable_dogtail" != no)
+
+dnl Installed tests
+BEHAVE_INSTALLED_TESTS
+
 # coverage
 AC_ARG_ENABLE([coverage],
               [AS_HELP_STRING([--enable-coverage],
